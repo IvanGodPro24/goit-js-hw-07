@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  margin-top: 24px;
+}
+
+.item {
+  max-width: 392px;
+
+  border-radius: 8px;
+  padding: 16px;
+  background: #f6f6fe;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  margin-bottom: 16px;
+}
+
+input {
+  outline: none;
+}
+
+.item > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item > ul > li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 0px 8px 16px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.gallery-item {
+  flex-basis: calc((75% - 60px) / 3);
+}
+
+.gallery-image {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#name-input,
+input[type="email"],
+input[type="password"] {
+  min-width: 360px;
+  min-height: 40px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+#name-input:hover {
+  border: 1px solid #000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form {
+  max-width: 408px;
+  min-height: 256px;
+  margin: 0 auto;
+
+  border-radius: 8px;
+  padding: 24px;
+
+  background: #fff;
+
+  margin-top: 24px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  margin-bottom: 8px;
+}
+
+label:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+input[type="email"],
+input[type="password"] {
+  max-width: 360px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button[data-create],
+button[data-destroy],
+.change-color,
+.login-form > button {
+  min-width: 86px;
+  min-height: 40px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  background: #4e75ff;
+
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button[data-create]:hover,
+button[data-create]:focus,
+.change-color:hover,
+.change-color:focus,
+.login-form > button:hover,
+.login-form > button:focus {
+  background: #6c8cff;
+}
+
+button[data-destroy] {
+  background: #ff4e4e;
+}
+
+button[data-destroy]:hover,
+button[data-destroy]:focus {
+  background: #ff7070;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  border-radius: 8px;
+  padding: 100px 88px;
+
+  max-width: 345px;
+  min-height: 280px;
+  margin: 0 auto;
+
+  background: #fff;
+
+  margin-top: 50px;
+}
+
+.color {
+  display: block;
+  text-align: center;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0 auto;
+
+  max-width: 486px;
+  min-height: 104px;
+
+  border-radius: 8px;
+  padding: 32px;
+
+  background: #f6f6fe;
+
+  margin-top: 24px;
+}
+
+#controls > input {
+  max-width: 150px;
+  min-height: 40px;
+
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 50px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#boxes {
+  display: flex;
+  gap: 20px;
+
+  max-width: 100%;
+  min-height: 134px;
+
+  border-radius: 8px;
+  padding: 32px;
+
+  background: #f6f6fe;
+  
+  margin-top: 30px;
+}
+
+.box {
+  flex-shrink: 0;
+}
